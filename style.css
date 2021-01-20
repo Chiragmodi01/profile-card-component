@@ -103,11 +103,11 @@ border-radius: 50%;
 
 #card-container {
   width: 60%;
-  height: 45vh;
+  height: 42vh;
 }
 #profile-img {
   top: -50px;
-  left: 55px;
+  left: 57px;
 border: 5px white solid;
 border-radius: 50%;
 }
