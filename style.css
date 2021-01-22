@@ -9,20 +9,36 @@
 
 body {
   font-family:'Kumbh Sans', sans-serif;
-  /* background-image: url(/images/bg-pattern-bottom.svg); */
+  background-color: var(--darkCyan);
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 30vh bottom 40vh;
-  background-color: var(--darkCyan);
+  overflow: hidden;
+}
+
+#bg-top{
+ bottom: 40%;
+ right: 50%;
+ background-repeat: no-repeat, no-repeat;
+ box-sizing: border-box;
+ position: absolute;
+}
+
+#bg-bottom{
+ top: 40%;
+ left: 50%;
+ background-repeat: no-repeat, no-repeat;
+ box-sizing: border-box;
+ position: absolute;
 }
 
 #card-container {
   font-family:'Kumbh Sans', sans-serif;
+  position: relative;
   width: 22%;
   height: 52vh;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main {
@@ -99,16 +115,24 @@ border-radius: 50%;
  margin-bottom: 0rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px){
 
+body {
+  overflow: hidden;
+  height: 80vh;
+}
 #card-container {
-  width: 60%;
-  height: 42vh;
+  width: 75%;
+  height: 45vh;
+  position: relative;
 }
 #profile-img {
-  top: -50px;
-  left: 57px;
+left: 80%;
 border: 5px white solid;
 border-radius: 50%;
+}
+#bg-bottom{
+
+  position: fixed;
 }
 }
